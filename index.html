@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>respond.io careers — open roles mockup</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    :root { --bg: #000; --panel: #0B0F14; --line: rgba(255,255,255,0.10); --blue: #1B70FF; --blue-line: #003CA0; --text: #fff; --muted: #CDCDCF; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: var(--blue); } a:hover { color: #4D8DFF; }
+    a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+    .wrap { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px 96px; }
+    header.top { display: flex; align-items: center; justify-content: space-between; height: 72px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .brand { font-weight: 700; font-size: 20px; letter-spacing: -0.4px; color: #fff; text-decoration: none; }
+    .tag { font-size: 13px; color: var(--muted); }
+    .hero { padding: 72px 0 40px; text-align: center; background: radial-gradient(60% 90% at 50% 0%, rgba(27,112,255,0.30), rgba(0,0,0,0) 70%); }
+    .hero h1 { margin: 0 0 16px; font-size: 40px; line-height: 48px; font-weight: 600; letter-spacing: -0.8px; text-wrap: balance; }
+    .hero p { margin: 0 auto; max-width: 720px; font-size: 18px; line-height: 28px; font-weight: 500; }
+    .flow { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 28px; font-size: 14px; font-weight: 500; color: var(--muted); }
+    .flow span.pill { padding: 6px 12px; border: 1px solid rgba(255,255,255,0.25); border-radius: 999px; color: #fff; }
+    .flow .arrow { color: var(--muted); }
+    h2 { margin: 56px 0 20px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #F8F9FA; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 740px; }
+    .card { display: flex; flex-direction: column; gap: 14px; padding: 18px; border: 1px solid var(--blue-line); border-radius: 20px; background: var(--panel); color: #fff; text-decoration: none; transition: border-color .15s, background .15s; }
+    .card:hover { border-color: var(--blue); background: rgba(27,112,255,0.08); color: #fff; }
+    .shot { position: relative; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 12px; border: 1px solid var(--line); background: #000; }
+    .shot.phone { aspect-ratio: 9 / 16; max-width: 220px; margin: 0 auto; }
+    .shot iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 800px; border: 0; transform-origin: 0 0; pointer-events: none; }
+    .shot.phone iframe { width: 390px; height: 693px; }
+    .step { display: flex; align-items: baseline; gap: 10px; }
+    .step .n { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 999px; background: var(--blue); color: #fff; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+    .step .t { font-size: 17px; font-weight: 600; line-height: 24px; }
+    .url { font: 12px/18px ui-monospace, SFMono-Regular, Menlo, monospace; color: #9FC2FF; word-break: break-all; }
+    .card p { margin: 0; font-size: 14px; line-height: 20px; color: var(--muted); }
+    .card .open { margin-top: auto; font-size: 14px; font-weight: 500; color: #fff; display: inline-flex; align-items: center; gap: 6px; }
+    .note { margin-top: 56px; padding: 20px 24px; border: 1px dashed var(--blue-line); border-radius: 16px; font-size: 14px; line-height: 22px; color: var(--muted); }
+    .note strong { color: #fff; }
+    footer { margin-top: 40px; font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    @media (max-width: 860px) { .grid, .grid.two { grid-template-columns: 1fr; } .hero h1 { font-size: 32px; line-height: 40px; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="index.html">respond.io</a>
+    <span class="tag">Careers page mockup · Breezy → Rippling</span>
+  </header>
+
+  <section class="hero">
+    <h1>Open roles on respond.io, not on a third-party job board</h1>
+    <p>Click-through mockup of the new candidate flow. The careers page stays as it is, the list of open roles moves onto our own site, and the job description plus apply form live on Rippling with our branding.</p>
+    <div class="flow">
+      <span class="pill">1 · respond.io/careers</span><span class="arrow">→</span>
+      <span class="pill">2 · respond.io/careers/open-roles</span><span class="arrow">→</span>
+      <span class="pill">3 · ats.rippling.com/respond-io/jobs/…</span>
+    </div>
+  </section>
+
+  <h2>The flow, three screens</h2>
+  <div class="grid">
+    <a class="card" href="careers.html">
+      <div class="shot"><iframe src="careers.html?embed" title="Preview: careers page" tabindex="-1" loading="lazy" scrolling="no"></iframe></div>
+      <div class="step"><span class="n">1</span><span class="t">Careers page</span></div>
+      <div class="url">respond.io/careers</div>
+      <p>Stays exactly as it is today. The only change: “View Open Roles” goes to our own roles page instead of breezy.hr.</p>
+      <span class="open">Open screen →</span>
+    </a>
+    <a class="card" href="open-roles.html">
+      <div class="shot"><iframe src="open-roles.html?embed" title="Preview: open roles page" tabindex="-1" loading="lazy" scrolling="no"></iframe></div>
+      <div class="step"><span class="n">2</span><span class="t">Open roles</span></div>
+      <div class="url">respond.io/careers/open-roles</div>
+      <p>New page in our design on our URL. Roles are pulled live from Rippling, grouped by team, with a team filter. Click a role to go to step 3.</p>
+      <span class="open">Open screen →</span>
+    </a>
+    <a class="card" href="job.html">
+      <div class="shot"><iframe src="job.html?embed" title="Preview: job page" tabindex="-1" loading="lazy" scrolling="no"></iframe></div>
+      <div class="step"><span class="n">3</span><span class="t">Job description + apply</span></div>
+      <div class="url">ats.rippling.com/respond-io/jobs/…</div>
+      <p>Hosted by Rippling in their template with our logo, font and colours. Wireframe only; the sample shows Account Executive (EU) whichever role you click.</p>
+      <span class="open">Open screen →</span>
+    </a>
+  </div>
+
+  <h2>Step 2, other states</h2>
+  <div class="grid two">
+    <a class="card" href="open-roles-phone.html">
+      <div class="shot phone"><iframe src="open-roles-phone.html?embed" title="Preview: open roles on phone" tabindex="-1" loading="lazy" scrolling="no"></iframe></div>
+      <div class="step"><span class="t">Phone width</span></div>
+      <p>Same page at 390px. The filter strip scrolls sideways.</p>
+      <span class="open">Open screen →</span>
+    </a>
+    <a class="card" href="open-roles-empty.html">
+      <div class="shot"><iframe src="open-roles-empty.html?embed" title="Preview: open roles, nothing open" tabindex="-1" loading="lazy" scrolling="no"></iframe></div>
+      <div class="step"><span class="t">Nothing open</span></div>
+      <p>What the page shows when there are no open roles.</p>
+      <span class="open">Open screen →</span>
+    </a>
+  </div>
+
+  <div class="note">
+    <strong>Reading the mockup.</strong> Black pages are ours and use the current respond.io site styling. The light page is Rippling's template. Roles, teams and locations are sample data from our Breezy board on 17 Sept 2026; on the real page they come live from Rippling, so counts and groups will change. “Other” is where roles with no department set would land, which is a data fix, not a design one. Grey boxes stand for content that already exists on the live site.
+  </div>
+
+  <footer>
+    <span>Source artboards: <a href="source/">source/</a></span>
+    <span>Prepared by Talent Acquisition, Sept 2026</span>
+  </footer>
+</div>
+<script>
+  // Scale each preview iframe to fit its box.
+  function fit() {
+    document.querySelectorAll('.shot').forEach(function (box) {
+      var f = box.querySelector('iframe');
+      var w = box.classList.contains('phone') ? 390 : 1280;
+      f.style.transform = 'scale(' + (box.clientWidth / w) + ')';
+    });
+  }
+  window.addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>
