@@ -1,0 +1,111 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-09-17T09:30:00Z"
+  },
+  "title": "Careers Page Roles Mockup",
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1280,
+      "h": 5000,
+      "title": "1 · Careers page — respond.io/careers",
+      "is_interactive": true
+    },
+    "OpenRoles.dc.html": {
+      "x": 1360,
+      "y": 0,
+      "w": 1280,
+      "h": 3080,
+      "title": "2 · Open roles — respond.io/careers/open-roles",
+      "is_interactive": true
+    },
+    "JobPage.dc.html": {
+      "x": 2720,
+      "y": 0,
+      "w": 1280,
+      "h": 1000,
+      "title": "3 · Job description + apply — Rippling-hosted (wireframe)",
+      "is_interactive": true
+    },
+    "Phone.dc.html": {
+      "x": 4080,
+      "y": 0,
+      "w": 390,
+      "h": 2880,
+      "title": "2 · Open roles — phone",
+      "is_interactive": true
+    },
+    "Empty.dc.html": {
+      "x": 4550,
+      "y": 0,
+      "w": 1280,
+      "h": 860,
+      "title": "2 · Open roles — nothing open",
+      "is_interactive": true
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "OpenRoles.dc.html",
+    "JobPage.dc.html",
+    "Phone.dc.html",
+    "Empty.dc.html"
+  ],
+  "notes": {
+    "t1": {
+      "x": 0,
+      "y": -320,
+      "text": "respond.io careers — click-through flow: careers page → open roles → job page",
+      "kind": "title1",
+      "maxW": 5830
+    },
+    "s1": {
+      "x": 0,
+      "y": -160,
+      "w": 520,
+      "maxH": 140,
+      "size": "m",
+      "text": "1 · Careers page stays as it is. Only change: 'View Open Roles' now goes to our own roles page instead of breezy.hr."
+    },
+    "s2": {
+      "x": 1360,
+      "y": -160,
+      "w": 520,
+      "maxH": 140,
+      "size": "m",
+      "text": "2 · New page on respond.io — our design, our URL. The list is live from the hiring system, so counts and groups change. 'Other' = roles with no department set (a data fix, not a design one). Click a role → step 3."
+    },
+    "s3": {
+      "x": 2720,
+      "y": -160,
+      "w": 560,
+      "maxH": 140,
+      "size": "m",
+      "text": "3 · Job description + apply form, hosted by Rippling at ats.rippling.com — their template with our logo, font and colours. Wireframe only. The sample shows Account Executive (EU) whichever role you click."
+    },
+    "s4": {
+      "x": 4080,
+      "y": -160,
+      "w": 390,
+      "maxH": 140,
+      "size": "m",
+      "text": "Step 2 at phone width. Filter strip scrolls sideways. Links open the desktop boards."
+    },
+    "s5": {
+      "x": 4550,
+      "y": -160,
+      "w": 520,
+      "maxH": 140,
+      "size": "m",
+      "text": "Step 2 when nothing is open."
+    }
+  },
+  "designSystems": []
+}
