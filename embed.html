@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>respond.io careers mockup — embed view</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <style>
+    :root { --bg: #000; --panel: #0B0F14; --line: rgba(255,255,255,0.10); --blue: #1B70FF; --blue-line: #003CA0; --text: #fff; --muted: #CDCDCF; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: var(--blue); text-decoration: none; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+    .wrap { height: 100%; display: flex; flex-direction: column; gap: 10px; padding: 10px 12px 12px; }
+
+    .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .bar .title { min-width: 0; }
+    .bar .title { font-size: 13px; font-weight: 600; letter-spacing: -0.2px; }
+    .bar .title span { color: var(--muted); font-weight: 500; }
+    .bar .out { font-size: 12px; font-weight: 500; white-space: nowrap; }
+
+    /* Big, live, real-size screen. */
+    .stage { position: relative; flex: 1; min-height: 220px; border: 1px solid var(--blue-line); border-radius: 12px; overflow: hidden; background: #07090C; }
+    .stage.phone iframe { box-shadow: 0 0 0 1px var(--line); }
+    .stage iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 800px; border: 0; display: block; transform-origin: 0 0; }
+    .flag { padding: 3px 9px; border-radius: 999px; background: rgba(27,112,255,0.12); border: 1px solid var(--blue-line); font: 500 11px/16px ui-monospace, SFMono-Regular, Menlo, monospace; color: #9FC2FF; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    /* The three screens, side by side, as the picker. */
+    .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; flex-shrink: 0; }
+    .thumb { display: flex; flex-direction: column; gap: 6px; padding: 7px; border: 1px solid var(--blue-line); border-radius: 11px; background: var(--panel); color: #fff; cursor: pointer; text-align: left; font: inherit; appearance: none; }
+    .thumb:hover { border-color: var(--blue); background: rgba(27,112,255,0.08); }
+    .thumb[aria-current="true"] { border-color: var(--blue); background: rgba(27,112,255,0.16); }
+    .shot { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 7px; border: 1px solid var(--line); background: #000; }
+    .shot iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 720px; border: 0; transform-origin: 0 0; pointer-events: none; }
+    .meta { display: flex; align-items: center; gap: 7px; }
+    .n { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 999px; background: var(--blue); color: #fff; font-size: 11px; font-weight: 600; flex-shrink: 0; }
+    .t { font-size: 13px; font-weight: 600; letter-spacing: -0.2px; }
+
+    .more { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; font-size: 12px; color: var(--muted); flex-shrink: 0; }
+    .more b { color: #fff; font-weight: 600; }
+    .more button { appearance: none; background: none; border: 0; padding: 0; font: inherit; color: var(--blue); cursor: pointer; }
+
+    @media (min-width: 1100px) {
+      .wrap { padding: 16px 18px 18px; gap: 14px; }
+      .bar .title { font-size: 16px; }
+      .strip { gap: 14px; }
+      .thumb { padding: 10px; border-radius: 14px; }
+      .t { font-size: 15px; }
+      .more { font-size: 13px; }
+    }
+    @media (max-width: 560px) { .strip { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; } .t { font-size: 11px; } .n { width: 15px; height: 15px; font-size: 10px; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar">
+    <div class="title">respond.io careers mockup <span>· pick a screen below, then use it like the real page</span></div>
+    <span class="flag" id="flag">respond.io/careers/open-roles</span>
+    <a class="out" href="index.html" target="_blank" rel="noopener">Open full page ↗</a>
+  </div>
+
+  <div class="stage">
+    <iframe id="stage" src="open-roles.html?embed" title="Mockup screen"></iframe>
+  </div>
+
+  <div class="strip" id="strip"></div>
+
+  <div class="more">
+    <span><b>Other states:</b>
+      <button type="button" data-file="open-roles-phone.html" data-url="respond.io/careers/open-roles (390px)">Phone width</button> ·
+      <button type="button" data-file="open-roles-empty.html" data-url="respond.io/careers/open-roles (nothing open)">Nothing open</button></span>
+    <span>Black screens are ours, the light one is Rippling's template. Sample roles from 17 Sept 2026.</span>
+  </div>
+</div>
+
+<script>
+  var SCREENS = [
+    { n: '1', t: 'Careers page', file: 'careers.html', url: 'respond.io/careers' },
+    { n: '2', t: 'Open roles', file: 'open-roles.html', url: 'respond.io/careers/open-roles' },
+    { n: '3', t: 'Job + apply', file: 'job.html', url: 'ats.rippling.com/respond-io/jobs/…' }
+  ];
+  var NATIVE = 1280;
+  var strip = document.getElementById('strip');
+  var stage = document.getElementById('stage');
+  var flag = document.getElementById('flag');
+
+  SCREENS.forEach(function (s) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'thumb';
+    b.dataset.file = s.file;
+    b.dataset.url = s.url;
+    b.innerHTML = '<div class="shot"><iframe src="' + s.file + '?embed" title="Preview: ' + s.t + '" tabindex="-1" scrolling="no"></iframe></div>' +
+                  '<div class="meta"><span class="n">' + s.n + '</span><span class="t">' + s.t + '</span></div>';
+    strip.appendChild(b);
+  });
+
+  function show(file, url) {
+    if (stage.getAttribute('src') !== file + '?embed') stage.setAttribute('src', file + '?embed');
+    NATIVE = file === 'open-roles-phone.html' ? 390 : 1280;
+    stage.parentNode.classList.toggle('phone', NATIVE === 390);
+    flag.textContent = url;
+    fitStage();
+    document.querySelectorAll('.thumb').forEach(function (t) {
+      t.setAttribute('aria-current', t.dataset.file === file ? 'true' : 'false');
+    });
+  }
+
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-file]');
+    if (!el) return;
+    show(el.dataset.file, el.dataset.url);
+  });
+
+  function fitStage() {
+    var box = stage.parentNode;
+    // Phone screen keeps its real size and sits in the middle; desktop screens scale to fit.
+    var sc = Math.min(1, box.clientWidth / NATIVE);
+    var left = Math.max(0, (box.clientWidth - NATIVE * sc) / 2);
+    stage.style.width = NATIVE + 'px';
+    stage.style.height = Math.round(box.clientHeight / sc) + 'px';
+    stage.style.left = left + 'px';
+    stage.style.transform = 'scale(' + sc + ')';
+  }
+
+  function fit() {
+    fitStage();
+    document.querySelectorAll('.shot').forEach(function (box) {
+      var f = box.querySelector('iframe');
+      f.style.transform = 'scale(' + (box.clientWidth / 1280) + ')';
+    });
+  }
+  window.addEventListener('resize', fit);
+  fit();
+  show('open-roles.html', 'respond.io/careers/open-roles');
+</script>
+</body>
+</html>
