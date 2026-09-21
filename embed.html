@@ -48,6 +48,15 @@
       .t { font-size: 15px; }
       .more { font-size: 13px; }
     }
+    /* Short frame (Notion's default height): drop the thumbnails to text chips so the picker stays visible. */
+    @media (max-height: 430px) {
+      .wrap { gap: 7px; padding: 8px 10px 9px; }
+      .stage { min-height: 100px; }
+      .shot { display: none; }
+      .strip { display: flex; flex-wrap: wrap; gap: 6px; }
+      .thumb { flex-direction: row; align-items: center; padding: 5px 9px; border-radius: 999px; }
+      .more span:last-child { display: none; }
+    }
     @media (max-width: 560px) { .strip { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; } .t { font-size: 11px; } .n { width: 15px; height: 15px; font-size: 10px; } }
   </style>
 </head>
