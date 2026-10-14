@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Life @ respond.io Refresh</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one dark column like the careers section itself; each option = full-width mockup, then its 7-photo shot list */
+:root {
+  --bg: #08090d;
+  --panel: #12141b;
+  --line: #262a36;
+  --fg: #eef0f6;
+  --muted: #9aa0b2;
+  --accent: #1D72FF;
+  --accent-soft: rgba(29,114,255,.14);
+  --people: #f5b94a;
+  --office: #5fd0c4;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: grid; gap: 56px; }
+header { display: grid; gap: 14px; max-width: 70ch; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { font-size: clamp(28px, 4vw, 40px); line-height: 1.1; letter-spacing: -.02em; margin: 0; font-weight: 700; text-wrap: balance; }
+h2 { font-size: 22px; letter-spacing: -.01em; margin: 0; font-weight: 600; text-wrap: balance; }
+p { margin: 0; }
+.lede { color: var(--muted); font-size: 16px; }
+.legend { display: flex; flex-wrap: wrap; gap: 10px 18px; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.dot.people { background: var(--people); }
+.dot.office { background: var(--office); }
+section { display: grid; gap: 18px; }
+.head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px; }
+.tag { font-family: var(--font-mono); font-size: 12px; padding: 3px 8px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); }
+.tag.rec { border-color: var(--accent); color: var(--fg); background: var(--accent-soft); }
+.why { color: var(--muted); max-width: 75ch; }
+figure { margin: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: #000; }
+figure img { display: block; width: 100%; height: auto; }
+.shots { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; }
+.shots li { min-width: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; align-items: start; padding: 10px 12px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+.shots .dot { margin-top: 7px; }
+.slot { font-family: var(--font-mono); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.shots a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--line); }
+.shots a:hover, .shots a:focus-visible { border-bottom-color: var(--accent); color: #fff; outline: none; }
+.src { font-size: 12.5px; color: var(--muted); }
+.fixed { display: grid; gap: 10px; }
+.fixed .shots li { background: transparent; }
+.notes { display: grid; gap: 10px; padding: 18px 20px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+.notes ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; color: var(--muted); }
+.notes strong { color: var(--fg); font-weight: 600; }
+@media (max-width: 520px) { .wrap { gap: 44px; padding-block: 28px 56px; } }
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">respond.io/careers · bottom section</div>
+    <h1>Life @ respond.io refresh</h1>
+    <p class="lede">A new set of 7 pictures for the bottom of the careers page. Same pattern as the current collage: 4 photos of the team doing activities, 3 photos of the office.</p>
+    <div class="legend"><span><i class="dot people"></i>Activity photo</span><span><i class="dot office"></i>Office photo (2023 pro shoot of our current office)</span></div>
+  </header>
+
+  <section id="today">
+    <div class="head"><h2>Today</h2><span class="tag">live on the site</span></div>
+    <p class="why">Two costume photos (one of them is the photo Bernardo asked to remove), go-karting, an old crafts session, and three office shots.</p>
+    <figure><img src="today.jpg" alt="Current Life @ respond.io collage on the careers page" width="1512" height="726"></figure>
+  </section>
+
+  <section id="new">
+    <div class="head"><h2>New version</h2><span class="tag rec">proposed</span></div>
+    <p class="why">The whole team at movie night, the Christmas party toast, parasailing, the go-kart from today, plus the neon lounge, the snack bar and the pool table with the city view.</p>
+    <figure><img src="mockup.jpg" alt="Proposed Life @ respond.io collage" width="1568" height="777"></figure>
+    <ol class="shots">
+      <li><i class="dot people"></i><div><div class="slot">Left · large</div><a href="https://drive.google.com/file/d/1D-e465N3IFGNb6At7pGeZimLgY-MPjxT/view" target="_blank" rel="noopener">Movie night, whole team in the cinema</a><div class="src">Aug 2024</div></div></li>
+      <li><i class="dot office"></i><div><div class="slot">Left · medium</div><a href="https://drive.google.com/file/d/1-3yK__jKWGGlbMGQgpsMUB5us4gjmLvF/view" target="_blank" rel="noopener">Lounge under the neon sign</a><div class="src">Office shoot</div></div></li>
+      <li><i class="dot office"></i><div><div class="slot">Left · small</div><a href="https://drive.google.com/file/d/10zKMVAH1XZTG6r1mmZkzZGSuuqbiW2oo/view" target="_blank" rel="noopener">Snack bar</a><div class="src">Office shoot</div></div></li>
+      <li><i class="dot people"></i><div><div class="slot">Left · bottom</div><a href="https://drive.google.com/drive/folders/1motr4O4RfEjjHjjRCIT8cU8OHtnQfHig" target="_blank" rel="noopener">Go-karting (same photo as today)</a><div class="src">Oct 2023</div></div></li>
+      <li><i class="dot people"></i><div><div class="slot">Right · top</div><a href="https://drive.google.com/file/d/1LC0lNkiS9dNr3CJdx4uGSUfhoQshHQa2/view" target="_blank" rel="noopener">Parasailing</a><div class="src">Bali retreat, Mar 2023</div></div></li>
+      <li><i class="dot people"></i><div><div class="slot">Right · large</div><a href="https://drive.google.com/file/d/1CH87Rq3-MjImIldYO1GDxPf1m_VpnxYe/view" target="_blank" rel="noopener">Christmas party toast</a><div class="src">Dec 2023</div></div></li>
+      <li><i class="dot office"></i><div><div class="slot">Right · bottom</div><a href="https://drive.google.com/file/d/1o22k4m54L1TmZDfH4_2YuvJEzIlu4iy4/view" target="_blank" rel="noopener">Pool table with the city view</a><div class="src">Office shoot</div></div></li>
+    </ol>
+  </section>
+</div>
+
+</body>
+</html>
